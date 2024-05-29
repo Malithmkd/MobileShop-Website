@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #2980b9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+body {
+    flex-direction: column;
+}
+
+
+.welcome {
+    position: sticky;
+    font-size: 24px;
+    
+    margin-top: 1150px;
+    
+    margin-bottom: 10px;
+}
+
+.welcome span {
+    color: #ff0000;
+    
+}
+
+.our {
+    font-size: 24px;
+   
+    margin-top: 10px;
+    
+    margin-bottom: 10px;
+}
+
+.our span {
+    color: #ff0000;
+    
+}
+
+/*Products section*/
+.Products {
+    margin: 10px;
+    text-align: center;
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line if needed */
+    justify-content: center;
+    /* Center the items horizontally */
+}
+
+
+.mobile-text {
+    text-align: center;
+    padding: 2px;
+}
+
+.mobile-text h3 {
+    color: #333;
+    /* Text color */
+}
+
+.mobile-text p {
+    color: #666;
+}
+
+.mobile-text .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.mobiles,
+.accesories,
+.earphones {
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.mobiles img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), backface-visibility 0.3s;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+
+.accesories img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), backface-visibility 0.3s;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.earphones img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), backface-visibility 0.3s;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.mobile-text .cta-button:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px rgb(9, 60, 60);
+}
+
+.mobile-text .cta-button {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px cyan 0 0 25px cyan;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*About section*/
+.about-text {
+    text-align: center;
+    padding: 10px;
+}
+
+.about-text span {
+    color: red;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid rgb(38, 39, 117);
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    transition: .5s ease;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+    margin: 30px 15px 30px 0;
+}
+
+.social a:hover {
+    background: rgb(80, 96, 90);
+    color: #333;
+    box-shadow: 0 0 20px rgb(196, 122, 122);
+}
+
+/*Contact Form*/
+.contact-form form {
+    
+    margin-right: 10px;
+    margin-left: 500px;
+    
+
+}
+
+.contact-form form input,
+form textarea {
+    border: 1px solid black;
+    outline: none;
+    width: 50%;
+    padding: 18px;
+    background: #f4dede;
+    color: rgb(6, 6, 6);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 14px 60px;
+    background: rgb(228, 65, 65);
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+    box-shadow: 0 0 5px rgb(161, 85, 106), 0 0 25px rgb(161, 85, 106);
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px rgb(161, 85, 106), 0 0 25px rgb(161, 85, 106), 0 0 50px rgb(161, 85, 106),
+        0 0 100px rgb(161, 85, 106);
+    cursor: pointer;
+}
+.contact-form h2{
+    text-align: center;
+}
+.contact-form span{
+    color: red;
+}
+
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .contact-form form {
+        margin-right: 100px;
+        margin-left: 200px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 80%; 
+    }
+}
+
+.last-text p {
+    width: 2000px;
+    text-align: center;
+    padding: 25px 0;
+    background: #2980b9;
+    color: white;
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #193d64;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover{
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 25px cyan, 0 0 25px cyan;
+}
+
+
